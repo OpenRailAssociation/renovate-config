@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:enableMajor",
+    ":automergeMinor"
+  ],
+  "labels": ["Renovate"],
+  "dependencyDashboardLabels": ["Renovate"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["dev"],
+      "groupName": "dev dependencies group"
+    },
+    {
+      "managers": ["github-actions"],
+      "groupName": "GitHub actions group"
+    }
+  ],
+  "semanticCommits": "enabled"
+}
