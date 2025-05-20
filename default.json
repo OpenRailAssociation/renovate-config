@@ -3,7 +3,8 @@
   "extends": [
     "config:recommended",
     "docker:enableMajor",
-    ":automergeMinor"
+    ":automergeMinor",
+    "helpers:pinGitHubActionDigests"
   ],
   "labels": ["Renovate"],
   "dependencyDashboardLabels": ["Renovate"],
