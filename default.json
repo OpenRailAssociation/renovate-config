@@ -6,8 +6,8 @@
     ":automergeMinor",
     "helpers:pinGitHubActionDigests"
   ],
-  "labels": ["Renovate"],
-  "dependencyDashboardLabels": ["Renovate"],
+  "labels": ["Renovate", "dependencies"],
+  "dependencyDashboardLabels": ["Renovate", "dependencies"],
   "packageRules": [
     {
       "matchDepTypes": ["dev"],
