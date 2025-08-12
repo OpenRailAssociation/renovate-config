@@ -7,6 +7,7 @@
     "helpers:pinGitHubActionDigests"
   ],
   "labels": ["Renovate", "dependencies"],
+  "dependencyDashboardTitle":"[Bot] Dependency Dashboard",
   "dependencyDashboardLabels": ["Renovate", "dependencies"],
   "dependencyDashboardHeader": "> [!NOTE]<br>This issue is automatically generated and updated by Renovate to show the status of dependencies in this repository. Please do not edit or close this issue. If you are using Renovate as the hosted app, you may also check the status and trigger actions in the [Mend.io Web Portal](https://developer.mend.io).",
   "packageRules": [
