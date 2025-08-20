@@ -20,5 +20,7 @@
       "groupName": "GitHub actions group"
     }
   ],
-  "semanticCommits": "enabled"
+  "semanticCommits": "enabled",
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict"
 }
