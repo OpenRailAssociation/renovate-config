@@ -22,6 +22,7 @@
   ],
   "semanticCommits": "enabled",
   "minimumReleaseAge": "3 days",
+  "minimumReleaseAgeBehaviour":"timestamp-optional",
   "internalChecksFilter": "strict",
   "lockFileMaintenance": {
     "enabled": true
