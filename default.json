@@ -4,7 +4,9 @@
     "config:recommended",
     "docker:enableMajor",
     ":automergeMinor",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigestsToSemver",
+    ":maintainLockFilesWeekly",
+    ":semanticCommits"
   ],
   "labels": ["Renovate", "dependencies"],
   "dependencyDashboardTitle":"[Bot] Dependency Dashboard",
@@ -20,11 +22,7 @@
       "groupName": "GitHub actions group"
     }
   ],
-  "semanticCommits": "enabled",
   "minimumReleaseAge": "3 days",
   "minimumReleaseAgeBehaviour":"timestamp-optional",
-  "internalChecksFilter": "strict",
-  "lockFileMaintenance": {
-    "enabled": true
-  }
+  "internalChecksFilter": "strict"
 }
