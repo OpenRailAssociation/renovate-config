@@ -19,7 +19,7 @@ Add a file `renovate.json5` to your repo which at least contains the following:
 
 ```json5
 // SPDX-License-Identifier: CC0-1.0
-// SPDX-FileCopyrightText: 2025 OpenRail Association AISBL
+// SPDX-FileCopyrightText: 2026 OpenRail Association AISBL
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>OpenRailAssociation/renovate-config"],
@@ -28,14 +28,17 @@ Add a file `renovate.json5` to your repo which at least contains the following:
 
 This will use the configuration from [`default.json`](default.json) which we consider to be a sane baseline.
 
-We also have other presets which you may use, e.g. [`rangestrategy-pin.json`](rangestrategy-pin.json), which in turn in based on the default. To use this, make your `renovate.json5` look like this:
+We also have other presets which you may use, e.g. [`actions-pin-documentation.json`](actions-pin-documentation.json), which may extend the default. To use this, make your `renovate.json5` look like this:
 
 ```json5
 // SPDX-License-Identifier: CC0-1.0
-// SPDX-FileCopyrightText: 2025 OpenRail Association AISBL
+// SPDX-FileCopyrightText: 2026 OpenRail Association AISBL
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>OpenRailAssociation/renovate-config:rangestrategy-pin"],
+  "extends": [
+    "github>OpenRailAssociation/renovate-config",
+    "github>OpenRailAssociation/renovate-config:actions-pin-documentation"
+  ],
 }
 ```
 
