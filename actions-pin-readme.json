@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":automergeDigest"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["pinDigest"],
+      "automerge": true
+    }
+  ],
+  "github-actions": {
+    "managerFilePatterns": [
+      "/README\\.md/"
+    ]
+  }
+}
